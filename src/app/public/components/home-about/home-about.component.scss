@@ -1,0 +1,45 @@
+#about {
+  background: linear-gradient(#2c2c2ccf, #030303ff);
+  &__content {
+    padding: 4rem 16rem;
+    text-align: center;
+    color: #c2c2c2;
+    hr {
+      margin: 2.5rem 0;
+      border: 0.5px solid rgba(88, 88, 88, 0.4);
+    }
+    &__description {
+      margin: 2rem 0;
+    }
+    &__skills-list {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 64px;
+      row-gap: 32px;
+      margin: 2rem 3rem;
+      .skill {
+        border: solid 1px #626262;
+        border-radius: 10px;
+        padding: 20px 28px;
+      }
+    }
+    &__quote {
+      padding: 1rem 3rem 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &__content {
+      padding: 4rem 3rem;
+      &__skills-list {
+        grid-template-columns: 120px 120px;
+        column-gap: 24px;
+        row-gap: 16px;
+        .skill {
+          padding: 12px 16px;
+          border-radius: 7.5px;
+        }
+      }
+    }
+  }
+}
