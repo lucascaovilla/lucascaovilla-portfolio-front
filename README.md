@@ -1,4 +1,8 @@
-# AngularApp
+# Lucas Caovilla'
+This project is built in angular v18.0.0.
+It's the front-end application of lucascaovilla portfolio.
+
+## Development server
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
 
