@@ -1,0 +1,27 @@
+#home {
+  height: 100vh;
+  &__background {
+    height: 100%;
+    left: 50%;
+    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: 100vmax;
+    z-index: -1;
+  }
+  &__content {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 22rem;
+  }
+  @media screen and (max-width: 767px) {
+    &__content {
+      top: 5rem;
+      left: 1rem;
+      width: calc(100vw - 2rem);
+    }
+  }
+}
