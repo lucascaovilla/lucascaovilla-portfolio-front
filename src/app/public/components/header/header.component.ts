@@ -8,5 +8,22 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  sectionsList: any[] = [
+    {
+      "link": "#home",
+      "title": "Home",
+    },
+    {
+      "link": "#about",
+      "title": "About",
+    },
+    {
+      "link": "#portfolio",
+      "title": "Portfolio",
+    },
+    {
+      "link": "#footer",
+      "title": "Contact",
+    },
+  ]
 }

@@ -1,1 +1,5 @@
-<p>header works!</p>
+<header id="header">
+  @for(section of sectionsList; track section) {
+    <a [href]="section['link']">{{ section['title'] }}</a>
+  }
+</header>
