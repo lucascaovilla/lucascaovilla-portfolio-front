@@ -4,11 +4,8 @@ It's the front-end application of lucascaovilla portfolio.
 
 ## Development server
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `docker compose -f dev.docker-compose.yml up` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `docker compose -f dev.docker-compose.yml down --rmi all --remove-orphans` to destroy the app container and ensure all of it's dependants are removed.
 
 ## Code scaffolding
 
