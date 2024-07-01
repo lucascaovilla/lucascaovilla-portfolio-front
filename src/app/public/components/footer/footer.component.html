@@ -1,1 +1,12 @@
-<p>footer works!</p>
+<footer id="footer">
+  <article id="footer__content">
+    @for(contact of contactsList; track contact) {
+      <a [href]="contact['link']" [target]="contact['target']" [rel]="contact['rel']">
+        <img [src]="contact['iconSrc']" [alt]="contact['iconAlt']" class="socialIcon" />
+      </a>
+    }
+  </article>
+  <p id="footer__credits" class="small">
+    Created by Lucas Caovilla
+  </p>
+</footer>
