@@ -1,4 +1,4 @@
-# Lucas Caovilla'
+# Lucas Caovilla
 This project is built in angular v18.0.0.
 It's the front-end application of lucascaovilla portfolio.
 
