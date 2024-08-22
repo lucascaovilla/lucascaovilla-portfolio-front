@@ -1,0 +1,17 @@
+<section id="about">
+  <div id="about__content">
+    <h2>About Me</h2>
+    <p id="about__content__description" class="large">{{ homeAbout.description }}</p>
+    <hr />
+    <article id="about__content__technologies-list">
+      @for(technology of homeAbout.technologyCards; track technology) {
+        <div class="technology">
+          <h3>{{ technology.name }}</h3>
+          <p class="small">{{ technology.class }}</p>
+        </div>
+      }
+    </article>
+    <hr />
+    <p id="about__content__quote">{{ homeAbout.caption }}</p>
+  </div>
+</section>

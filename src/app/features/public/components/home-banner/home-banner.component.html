@@ -1,0 +1,11 @@
+<section id="home">
+  <picture>
+    <source [srcset]="homeBanner.backgroundImageAvifSrc" type="image/avif">
+    <source [srcset]="homeBanner.backgroundImageWebpSrc" type="image/webp">
+    <img id="home__background" [src]="homeBanner.backgroundImageJpgSrc" [alt]="homeBanner.backgroundImageAlt" [width]="homeBanner.backgroundImageWidth" [height]="homeBanner.backgroundImageHeight"/>
+  </picture>
+  <article id="home__content">
+    <h1>Lucas Caovilla</h1>
+    <h2>Full-stack Developer</h2>
+  </article>
+</section>
