@@ -4,6 +4,7 @@ import { Observable } from "rxjs";
 
 import { environment } from "../../../../../../environments/environment";
 import HomeDTO from "../interfaces/home.dto";
+import ResponseDTO from "../../../../../core/DTOs/response.dto";
 
 @Injectable({
   providedIn: "root"
@@ -13,8 +14,8 @@ class HomeService {
     private http: HttpClient
   ) { }
 
-  home(): Observable<HomeDTO> {
-    return this.http.get<HomeDTO>(environment.url + "home");
+  home(): Observable<ResponseDTO<HomeDTO>> {
+    return this.http.get<ResponseDTO<HomeDTO>>(environment.url + "home");
   }
 }
 

@@ -15,17 +15,23 @@ import ResponseDTO from '../../../../../../core/DTOs/response.dto';
 })
 export class HomeComponent implements OnInit {
   homeData: HomeDTO | null = null;
+  errorMessage: string | null = null;
 
   constructor(private homeService: HomeService) {}
 
-  ngOnInit(): void {
-    this.homeService.home().subscribe({
-      next: (response: HomeDTO) => {
-        this.homeData = response;
+  ngOnInit() {
+    this.homeService.home().subscribe(
+      (response: ResponseDTO<HomeDTO>) => {
+        if (response.success) {
+          this.homeData = response.data;
+        } else {
+          this.errorMessage = response.message;
+        }
       },
-      error: (error) => {
-        console.error('Error fetching home data', error);
+      (error) => {
+        this.errorMessage = "An error occurred while fetching home data.";
+        console.error(error);
       }
-    });
+    );
   }
 }
